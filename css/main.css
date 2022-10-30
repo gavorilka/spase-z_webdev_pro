@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+}
+.container {
+    width: 75%;
+    margin: 0  auto;
+}
+.hidden {
+    position: absolute;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    margin: -1px;
+    opacity: 0;
+}
+.btn {
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 25px;
+    text-transform: none;
+    text-decoration: none;
+    color: #000000;
+    color: pointer;
+    width: 240px;
+    padding: 17px 22px 17px 38px;
+}
+.btn::after {
+    content: '';
+    display: block;
+    float: right;
+    width: 19px;
+    height: 16px;
+}
+.btn:hover {
+    background-color: #cacaca;
+}
+.site-header {
+    background-color: #222222;
+    color: #D4D4D4;
+}
+.site-menu {
+    padding-top: 55px;
+    display: flex;
+    align-items: center;
+}
+.main-nav {
+    display: flex;
+    column-gap: 30px;
+    margin-left: 60px;
+}
+li {
+    list-style: none;
+}
+.site-menu a {
+    text-decoration: none;
+    color: #D4D4D4;
+    cursor: pointer;
+}
+.contact-us {
+    display: flex;
+    margin-left: auto;
+    column-gap: 25px;
+}
+.icon {
+    display: block;
+    width: 17px;
+    height: 17px;
+}
+.icon-phone {
+    background: url("../img/phone-icon.png") no-repeat;
+}
+.icon-mail {
+    background: url("../img/mail-icon.png") no-repeat;
+}
+.about-us {
+    padding: 110px 0px 180px 65px;
+    width: 260px;
+}
+.about-us h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: #FFFFFF;
+    font-size: 45px;
+    line-height: 50px;
+    margin-bottom: 30px;
+}
+.btn-yellow {
+    margin-top: 54px;
+    background: #FFCB06;
+}
+.btn-yellow::after {
+    background: url('../img/right-arrow-dark.png') no-repeat;
+}
+.site-header .container {
+    background-image: url("../img/moon-rocket.png");
+    background-repeat: no-repeat;
+    background-position: right 140px;
+}

@@ -6,6 +6,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
     line-height: 17px;
+    color: #D4D4D4;
 }
 .container {
     width: 75%;
@@ -27,7 +28,7 @@ body {
     text-transform: none;
     text-decoration: none;
     color: #000000;
-    color: pointer;
+    cursor: pointer;
     width: 240px;
     padding: 17px 22px 17px 38px;
 }
@@ -43,7 +44,6 @@ body {
 }
 .site-header {
     background-color: #222222;
-    color: #D4D4D4;
 }
 .site-menu {
     padding-top: 55px;
@@ -62,6 +62,9 @@ li {
     text-decoration: none;
     color: #D4D4D4;
     cursor: pointer;
+}
+.site-menu a:hover{
+    opacity: .8;
 }
 .contact-us {
     display: flex;
@@ -101,4 +104,36 @@ li {
     background-image: url("../img/moon-rocket.png");
     background-repeat: no-repeat;
     background-position: right 140px;
+}
+.advantage {
+    background-color:#131313;
+    padding: 80px 0;
+}
+.advantage-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.advantage-item {
+    flex-basis: 180px;
+}
+.advantage-item::before {
+    content: "";
+    width: 60px;
+    height: 68px;
+    display: block;
+    margin-bottom: 34px;
+
+}
+.made::before {
+    background: url("../img/advantage-icon-1.png") no-repeat;
+}
+.food::before {
+    background: url("../img/advantage-icon-2.png") no-repeat;
+}
+.pilot::before {
+    background: url("../img/advantage-icon-3.png") no-repeat;
+}
+.moon-rover::before {
+    background: url("../img/advantage-icon-4.png") no-repeat;
 }

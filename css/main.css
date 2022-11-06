@@ -30,7 +30,7 @@ body {
     color: #000000;
     cursor: pointer;
     width: 240px;
-    padding: 17px 22px 17px 38px;
+    padding: 17px 38px 17px 22px;
 }
 .btn::after {
     content: '';
@@ -83,8 +83,10 @@ li {
     background: url("../img/mail-icon.png") no-repeat;
 }
 .about-us {
-    padding: 110px 0px 180px 65px;
-    width: 260px;
+    padding: 110px 0px 180px 120px;
+    background-image: url("../img/moon-rocket.png");
+    background-repeat: no-repeat;
+    background-position: right 24px;
 }
 .about-us h1 {
     font-family: 'Courier New', Courier, monospace;
@@ -93,17 +95,15 @@ li {
     line-height: 50px;
     margin-bottom: 30px;
 }
+.about-us-article {
+    width: 260px;
+}
 .btn-yellow {
     margin-top: 54px;
     background: #FFCB06;
 }
 .btn-yellow::after {
     background: url('../img/right-arrow-dark.png') no-repeat;
-}
-.site-header .container {
-    background-image: url("../img/moon-rocket.png");
-    background-repeat: no-repeat;
-    background-position: right 140px;
 }
 .advantage {
     background-color:#131313;
@@ -136,4 +136,55 @@ li {
 }
 .moon-rover::before {
     background: url("../img/advantage-icon-4.png") no-repeat;
+}
+
+.col-container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 50px 80px;
+}
+.col-left, .col-right {
+    flex-basis: 50%;
+}
+.content {
+    color: #000000;
+    margin: 80px 0px 50px;
+}
+.content>.col-container {
+    margin-bottom: 52px;
+}
+.lead {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 27px;
+}
+.content .lead {
+    margin-bottom: 27px;
+}
+.content-p {
+    margin-top: 30px;
+}
+.content-p:first-child {
+    margin: 17px;
+}
+.content-img {
+    width: 100%;
+    object-fit: cover;
+}
+.recomend-item {
+    margin-bottom: 25px;
+    margin-left: 30px;
+}
+.recomend-item::before {
+    content: "";
+    display: block;
+    background-color: #FFCB06;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: relative;
+    top: 19px;
+    left: -23px;
 }

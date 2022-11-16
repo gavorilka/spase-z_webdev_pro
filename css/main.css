@@ -25,12 +25,12 @@ body {
     box-sizing: border-box;
     border: none;
     border-radius: 25px;
-    text-transform: none;
     text-decoration: none;
+    text-transform: uppercase;
     color: #000000;
     cursor: pointer;
     width: 240px;
-    padding: 17px 38px 17px 22px;
+    padding: 17px 22px 17px 38px;
 }
 .btn::after {
     content: '';
@@ -185,6 +185,87 @@ li {
     height: 8px;
     border-radius: 50%;
     position: relative;
-    top: 19px;
+    top: 15px;
     left: -23px;
+}
+.vacation-request {
+    color: #000;
+    background: #F0F0F0;
+    padding: 100px 0 68px;
+}
+.vacation-request .col-left {
+    padding-left: 40px;
+}
+.vacation-request .lead {
+    padding-bottom: 60px;
+}
+.vacation-request-text {
+    max-width: 340px;
+}
+.form-element-window {
+    box-sizing: border-box;
+    padding: 17px 23px;
+    width: 100%;
+}
+.form-element-window::placeholder {
+    color: #000;
+}
+.form-element-window:hover::placeholder {
+    color: #FFCB06;
+}
+.form-element-window:active::placeholder {
+    color: #FFCB06;
+}
+.vacation-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 8px;
+}
+.form-element {
+    flex-basis: 100%;
+}
+.vacation-form .half-field {
+    flex-basis: 49%
+}
+ .btn-black {
+    width: 215px;
+    color: #fff;
+    background-color: #222222;
+    text-align: left;
+    padding-left: 26px;
+}
+.btn-black::after{
+    background: url('../img/right-arrow-white.png') no-repeat;
+} 
+.agreement {
+    margin: 10px 0 32px;
+}
+[for="argee"]::before {
+    content: "\2713";
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 25px;
+    height: 25px;
+
+    color: #fff;
+    background: #fff;
+    margin-right: 1em;
+    border: 1px solid #fff;
+
+    font-weight: bold;
+}
+.agreement input[type=checkbox]:hover ~ [for="argee"]::before {
+    color: #FFCB06;
+    border-color: #FFCB06;
+}
+.agreement input[type=checkbox]:checked ~ [for="argee"]::before {
+    color: #333;
+}
+
+input:focus {
+    outline-color: #FFCB06;
+    border-color: #FFCB06;
 }

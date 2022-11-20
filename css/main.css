@@ -269,3 +269,36 @@ input:focus {
     outline-color: #FFCB06;
     border-color: #FFCB06;
 }
+.yellow {
+    color:#FFCB06;
+}
+.timetable {
+    background-color: #222222;
+    padding: 97px 0px 85px;
+}
+.timetable-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 77px;
+}
+.timetable-info p{
+    flex-basis: 460px;
+}
+.timetable-info .lead {
+    flex-basis: 160px;
+}
+.timetable-flights {
+    width: 100%;
+    border-collapse: collapse;
+}
+.timetable th {
+    text-align: left;
+    background: #111111;
+    padding: 18px 17px 15px;
+}
+.timetable td{
+    padding: 20px 17px 13px;
+}
+.timetable-flights-row {
+    border-bottom: 1px solid #555555;;
+}

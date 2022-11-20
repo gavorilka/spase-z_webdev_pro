@@ -7,10 +7,10 @@ body {
     font-size: 14px;
     line-height: 17px;
     color: #D4D4D4;
+    position: sticky;
 }
 .container {
-    width: 75%;
-    margin: 0  auto;
+    margin: 0 12.5%;
 }
 .hidden {
     position: absolute;
@@ -44,9 +44,15 @@ body {
 }
 .site-header {
     background-color: #222222;
+    position: sticky;
+    top: 0;
+}
+.site-header-container {
+    padding-top: 55px;
+    display: flex;
+    justify-content: space-between;
 }
 .site-menu {
-    padding-top: 55px;
     display: flex;
     align-items: center;
 }
@@ -68,7 +74,7 @@ li {
 }
 .contact-us {
     display: flex;
-    margin-left: auto;
+    align-items: center;
     column-gap: 25px;
 }
 .icon {
@@ -83,10 +89,11 @@ li {
     background: url("../img/mail-icon.png") no-repeat;
 }
 .about-us {
+    background-color: #222222;
     padding: 110px 0px 180px 120px;
     background-image: url("../img/moon-rocket.png");
     background-repeat: no-repeat;
-    background-position: right 24px;
+    background-position: 87.5% 24px;
 }
 .about-us h1 {
     font-family: 'Courier New', Courier, monospace;

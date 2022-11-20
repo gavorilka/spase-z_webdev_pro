@@ -49,6 +49,7 @@ body {
 }
 .site-header-container {
     padding-top: 55px;
+    padding-bottom: 24px;
     display: flex;
     justify-content: space-between;
 }
@@ -90,10 +91,10 @@ li {
 }
 .about-us {
     background-color: #222222;
-    padding: 110px 0px 180px 120px;
+    padding: 96px 0px 180px 120px;
     background-image: url("../img/moon-rocket.png");
     background-repeat: no-repeat;
-    background-position: 87.5% 24px;
+    background-position: 87.5% 0;
 }
 .about-us h1 {
     font-family: 'Courier New', Courier, monospace;
@@ -194,6 +195,7 @@ li {
     position: relative;
     top: 15px;
     left: -23px;
+    z-index: -1;
 }
 .vacation-request {
     color: #000;
